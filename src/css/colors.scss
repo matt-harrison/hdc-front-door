@@ -9,6 +9,10 @@ $purple:    #6A3FC4;
 $red:       #BD0606;
 $white:     #FFFFFF;
 
+a                 {color: $blue;}
+a:active, a:hover {color: darken($blue, 20%);}
+a:visited         {color: $purple;}
+
 .bg-black     {background-color: $black;}
 .bg-blue      {background-color: $blue;}
 .bg-darkGray  {background-color: $darkGray;}
@@ -30,6 +34,17 @@ $white:     #FFFFFF;
 .border-purple    {border: 1px solid $purple;}
 .border-red       {border: 1px solid $red;}
 .border-white     {border: 1px solid $white;}
+
+.border-b-black     {border-bottom: 1px solid $black;}
+.border-b-blue      {border-bottom: 1px solid $blue;}
+.border-b-darkGray  {border-bottom: 1px solid $darkGray;}
+.border-b-gray      {border-bottom: 1px solid $gray;}
+.border-b-green     {border-bottom: 1px solid $green;}
+.border-b-lightGray {border-bottom: 1px solid $lightGray;}
+.border-b-orange    {border-bottom: 1px solid $orange;}
+.border-b-purple    {border-bottom: 1px solid $purple;}
+.border-b-red       {border-bottom: 1px solid $red;}
+.border-b-white     {border-bottom: 1px solid $white;}
 
 .color-black     {color: $black;}
 .color-blue      {color: $blue;}
