@@ -1,9 +1,28 @@
 import React, { Component } from 'react';
 
 class App extends Component {
+  state = {
+    isDarkMode: false
+  }
+
+  toggleDarkMode = () => {
+    const isDarkMode = !this.state.isDarkMode;
+
+    this.setState({isDarkMode});
+  }
+
   render() {
     return (
-      <div id="hdc-app" className="m-4">
+      <div
+      id="hdc-app"
+      className={`p-4 relative${this.state.isDarkMode ? ' dark-mode' : ''}`}
+      >
+        <button
+        className="absolute round-5 p-1/2 border-0 bg-blue color-white"
+        onClick={this.toggleDarkMode}
+        >
+          Dark Mode
+        </button>
         <section className="mb-4">
           <div className="mx-auto mb-4 container">
             <div className="w-1/2">

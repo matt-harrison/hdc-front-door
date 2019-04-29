@@ -3,13 +3,36 @@
 .relative {position: relative;}
 
 /* Display */
-.hide {display: none;}
-.flex {display: flex;}
+.hide        {display: none;}
+.flex        {display: flex;}
+.inline-flex {display: inline-flex;}
 
 /* Flexbox */
-.justify-center {justify-content: center;}
+.justify-center  {justify-content: center;}
+.justify-between {justify-content: space-between;}
 
 .items-center {align-items: center;}
 
+/* Overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+
 /* Text Alignment */
 .text-center {text-align: center;}
+
+/* Border Radius */
+.round-5  {border-radius:  5px;}
+.round-50 {border-radius: 50px;}
+
+/* Whitespace */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Cursor */
+.pointer {
+  cursor: pointer;
+}

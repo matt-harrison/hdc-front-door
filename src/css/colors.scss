@@ -17,6 +17,7 @@ body {
 a                 {color: $blue;}
 a:active, a:hover {color: darken($blue, 20%);}
 a:visited         {color: $purple;}
+a:visited:hover   {color: darken($purple, 20%);}
 
 .bg-black      {background-color: $black;}
 .bg-blue       {background-color: $blue;}
@@ -29,6 +30,11 @@ a:visited         {color: $purple;}
 .bg-red        {background-color: $red;}
 .bg-white      {background-color: $white;}
 
+.bg-blue:hover   {background-color: darken($blue, 20%);}
+.bg-gray:hover   {background-color: darken($gray, 20%);}
+.bg-orange:hover {background-color: darken($orange, 20%);}
+
+.border-0          {border: 0}
 .border-black      {border: 1px solid $black;}
 .border-blue       {border: 1px solid $blue;}
 .border-gray-dark  {border: 1px solid $grayDark;}
@@ -62,7 +68,7 @@ a:visited         {color: $purple;}
 .color-red        {color: $red;}
 .color-white      {color: $white;}
 
-body.dark-mode {
+.dark-mode {
   background-color: $grayDark;
   color: $white;
 }
