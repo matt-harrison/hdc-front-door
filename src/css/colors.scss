@@ -1,58 +1,68 @@
 $black:     #000000;
 $blue:      #0054A0;
-$darkGray:  #4A4A4A;
 $gray:      #6F6F6F;
+$grayDark:  #4A4A4A;
+$grayLight: #C1C1C1;
 $green:     #349D44;
-$lightGray: #C1C1C1;
 $orange:    #E27208;
 $purple:    #6A3FC4;
 $red:       #BD0606;
 $white:     #FFFFFF;
 
+body {
+  background-color: $white;
+  color: $grayDark;
+}
+
 a                 {color: $blue;}
 a:active, a:hover {color: darken($blue, 20%);}
 a:visited         {color: $purple;}
 
-.bg-black     {background-color: $black;}
-.bg-blue      {background-color: $blue;}
-.bg-darkGray  {background-color: $darkGray;}
-.bg-gray      {background-color: $gray;}
-.bg-green     {background-color: $green;}
-.bg-lightGray {background-color: $lightGray;}
-.bg-orange    {background-color: $orange;}
-.bg-purple    {background-color: $purple;}
-.bg-red       {background-color: $red;}
-.bg-white     {background-color: $white;}
+.bg-black      {background-color: $black;}
+.bg-blue       {background-color: $blue;}
+.bg-gray       {background-color: $gray;}
+.bg-gray-dark  {background-color: $grayDark;}
+.bg-gray-light {background-color: $grayLight;}
+.bg-green      {background-color: $green;}
+.bg-orange     {background-color: $orange;}
+.bg-purple     {background-color: $purple;}
+.bg-red        {background-color: $red;}
+.bg-white      {background-color: $white;}
 
-.border-black     {border: 1px solid $black;}
-.border-blue      {border: 1px solid $blue;}
-.border-darkGray  {border: 1px solid $darkGray;}
-.border-gray      {border: 1px solid $gray;}
-.border-green     {border: 1px solid $green;}
-.border-lightGray {border: 1px solid $lightGray;}
-.border-orange    {border: 1px solid $orange;}
-.border-purple    {border: 1px solid $purple;}
-.border-red       {border: 1px solid $red;}
-.border-white     {border: 1px solid $white;}
+.border-black      {border: 1px solid $black;}
+.border-blue       {border: 1px solid $blue;}
+.border-gray-dark  {border: 1px solid $grayDark;}
+.border-gray       {border: 1px solid $gray;}
+.border-green      {border: 1px solid $green;}
+.border-gray-light {border: 1px solid $grayLight;}
+.border-orange     {border: 1px solid $orange;}
+.border-purple     {border: 1px solid $purple;}
+.border-red        {border: 1px solid $red;}
+.border-white      {border: 1px solid $white;}
 
-.border-b-black     {border-bottom: 1px solid $black;}
-.border-b-blue      {border-bottom: 1px solid $blue;}
-.border-b-darkGray  {border-bottom: 1px solid $darkGray;}
-.border-b-gray      {border-bottom: 1px solid $gray;}
-.border-b-green     {border-bottom: 1px solid $green;}
-.border-b-lightGray {border-bottom: 1px solid $lightGray;}
-.border-b-orange    {border-bottom: 1px solid $orange;}
-.border-b-purple    {border-bottom: 1px solid $purple;}
-.border-b-red       {border-bottom: 1px solid $red;}
-.border-b-white     {border-bottom: 1px solid $white;}
+.border-b-black      {border-bottom: 1px solid $black;}
+.border-b-blue       {border-bottom: 1px solid $blue;}
+.border-b-gray       {border-bottom: 1px solid $gray;}
+.border-b-gray-dark  {border-bottom: 1px solid $grayDark;}
+.border-b-gray-light {border-bottom: 1px solid $grayLight;}
+.border-b-green      {border-bottom: 1px solid $green;}
+.border-b-orange     {border-bottom: 1px solid $orange;}
+.border-b-purple     {border-bottom: 1px solid $purple;}
+.border-b-red        {border-bottom: 1px solid $red;}
+.border-b-white      {border-bottom: 1px solid $white;}
 
-.color-black     {color: $black;}
-.color-blue      {color: $blue;}
-.color-darkGray  {color: $darkGray;}
-.color-gray      {color: $gray;}
-.color-green     {color: $green;}
-.color-lightGray {color: $lightGray;}
-.color-orange    {color: $orange;}
-.color-purple    {color: $purple;}
-.color-red       {color: $red;}
-.color-white     {color: $white;}
+.color-black      {color: $black;}
+.color-blue       {color: $blue;}
+.color-gray       {color: $gray;}
+.color-gray-dark  {color: $grayDark;}
+.color-gray-light {color: $grayLight;}
+.color-green      {color: $green;}
+.color-orange     {color: $orange;}
+.color-purple     {color: $purple;}
+.color-red        {color: $red;}
+.color-white      {color: $white;}
+
+body.dark-mode {
+  background-color: $grayDark;
+  color: $white;
+}
