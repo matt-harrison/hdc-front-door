@@ -20,14 +20,14 @@ class App extends Component {
         <section className="p-4">
           <div className="mx-auto mb-4 container">
             <div className="w-1/2">
-              <p className="mb-1 color-blue bold">Homes.com Match</p>
+              <p className="mb-1 font-color--blue bold">Homes.com Match</p>
               <p className="mb-1 border-b-gray pb-1 font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
             </div>
           </div>
           <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-blue color-white">Sample</button>
-            <button className="round-5 p-1/2 border-0 bg-orange color-white">Sample</button>
+            <button className="mr-2 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
+            <button className="round-5 p-1/2 border-0 bg-orange font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
             <p className="mb-1">
@@ -48,14 +48,14 @@ class App extends Component {
         <section className="p-4 bg-gray-light">
           <div className="mx-auto mb-4 container">
             <div className="w-1/2">
-              <p className="mb-1 color-blue bold">Homes.com Match</p>
+              <p className="mb-1 font-color--blue bold">Homes.com Match</p>
               <p className="mb-1 border-b-gray pb-1 font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
             </div>
           </div>
           <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-blue color-white">Sample</button>
-            <button className="round-5 p-1/2 border-0 bg-orange color-white">Sample</button>
+            <button className="mr-2 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
+            <button className="round-5 p-1/2 border-0 bg-orange font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
             <p className="mb-1">
@@ -82,8 +82,8 @@ class App extends Component {
             </div>
           </div>
           <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-white color-gray-dark">Sample</button>
-            <button className="round-5 p-1/2 border-white bg-gray-dark color-white">Sample</button>
+            <button className="mr-2 round-5 p-1/2 border-0 bg-white font-color--gray-dark">Sample</button>
+            <button className="round-5 p-1/2 border-white bg-gray-dark font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
             <p className="mb-1">
@@ -110,8 +110,8 @@ class App extends Component {
             </div>
           </div>
           <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-white color-blue">Sample</button>
-            <button className="round-5 p-1/2 border-white bg-blue color-white">Sample</button>
+            <button className="mr-2 round-5 p-1/2 border-0 bg-white font-color--blue">Sample</button>
+            <button className="round-5 p-1/2 border-white bg-blue font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
             <p className="mb-1">
@@ -131,23 +131,23 @@ class App extends Component {
 
         <div className="mx-auto p-4 container hide">
           <div className="w-full">
-            <div className="mb-1 bg-orange color-white text-center">Max content well of 784px</div>
-            <div className="flex mb-1 color-white">
+            <div className="mb-1 bg-orange font-color--white text-center">Max content well of 784px</div>
+            <div className="flex mb-1 font-color--white">
               <div className="mr-1 w-1/2 bg-orange text-center">1/2</div>
               <div className="w-1/2 bg-orange text-center">1/2</div>
             </div>
-            <div className="flex mb-1 color-white">
+            <div className="flex mb-1 font-color--white">
               <div className="mr-1 w-1/3 bg-orange text-center">1/3</div>
               <div className="mr-1 w-1/3 bg-orange text-center">1/3</div>
               <div className="w-1/3 bg-orange text-center">1/3</div>
             </div>
-            <div className="flex mb-1 color-white">
+            <div className="flex mb-1 font-color--white">
               <div className="mr-1 w-1/4 bg-orange text-center">1/4</div>
               <div className="mr-1 w-1/4 bg-orange text-center">1/4</div>
               <div className="mr-1 w-1/4 bg-orange text-center">1/4</div>
               <div className="w-1/4 bg-orange text-center">1/4</div>
             </div>
-            <div className="flex color-white">
+            <div className="flex font-color--white">
               <div className="mr-1 w-1/5 bg-orange text-center">1/5</div>
               <div className="mr-1 w-1/5 bg-orange text-center">1/5</div>
               <div className="mr-1 w-1/5 bg-orange text-center">1/5</div>
@@ -158,23 +158,23 @@ class App extends Component {
         </div>
 
         <div className="mb-4 pr-4 pl-4 hide">
-          <div className="mb-1 bg-blue color-white text-center">Responsive</div>
-          <div className="flex mb-1 color-white">
+          <div className="mb-1 bg-blue font-color--white text-center">Responsive</div>
+          <div className="flex mb-1 font-color--white">
             <div className="mr-1 w-1/2 bg-blue text-center">1/2</div>
             <div className="w-1/2 bg-blue text-center">1/2</div>
           </div>
-          <div className="flex mb-1 color-white">
+          <div className="flex mb-1 font-color--white">
             <div className="mr-1 w-1/3 bg-blue text-center">1/3</div>
             <div className="mr-1 w-1/3 bg-blue text-center">1/3</div>
             <div className="w-1/3 bg-blue text-center">1/3</div>
           </div>
-          <div className="flex mb-1 color-white">
+          <div className="flex mb-1 font-color--white">
             <div className="mr-1 w-1/4 bg-blue text-center">1/4</div>
             <div className="mr-1 w-1/4 bg-blue text-center">1/4</div>
             <div className="mr-1 w-1/4 bg-blue text-center">1/4</div>
             <div className="w-1/4 bg-blue text-center">1/4</div>
           </div>
-          <div className="flex color-white">
+          <div className="flex font-color--white">
             <div className="mr-1 w-1/5 bg-blue text-center">1/5</div>
             <div className="mr-1 w-1/5 bg-blue text-center">1/5</div>
             <div className="mr-1 w-1/5 bg-blue text-center">1/5</div>
