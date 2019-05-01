@@ -1,13 +1,15 @@
-$black:     #000000;
-$blue:      #0054A0;
-$gray:      #6F6F6F;
-$grayDark:  #4A4A4A;
-$grayLight: #C1C1C1;
-$green:     #349D44;
-$orange:    #E27208;
-$purple:    #6A3FC4;
-$red:       #BD0606;
-$white:     #FFFFFF;
+$black:       #000000;
+$blue:        #0054A0;
+$gray:        #6F6F6F;
+$grayDark:    #4A4A4A;
+$grayLight:   #F3F3F3;
+$green:       #349D44;
+$orange:      #E27208;
+$orangeLight: #F9AB62;
+$purple:      #6A3FC4;
+$purpleLight: #CFC4ED;
+$red:         #BD0606;
+$white:       #FFFFFF;
 
 body {
   background-color: $white;
@@ -19,6 +21,26 @@ a:active, a:hover {color: darken($blue, 20%);}
 a:visited         {color: $purple;}
 a:visited:hover   {color: darken($purple, 20%);}
 
+button.bg-blue:hover      {background-color: darken($blue, 20%);}
+button.bg-gray:hover      {background-color: darken($gray, 20%);}
+button.bg-gray-dark:hover {background-color: darken($grayDark, 20%);}
+button.bg-orange:hover    {background-color: darken($orange, 20%);}
+button.bg-white:hover     {background-color: darken($white, 20%);}
+
+/*
+Only the resets are affected by the Dark Mode modifier. Other elements within
+sections on dark backgrounds will be styled by applying dark-mode-approved
+classes from the reusable class library.
+*/
+.dark-mode {
+  color: $white;
+
+  a                 {color: $orangeLight;}
+  a:active, a:hover {color: darken($orangeLight, 20%);}
+  a:visited         {color: $purpleLight;}
+  a:visited:hover   {color: darken($purpleLight, 20%);}
+}
+
 .bg-black      {background-color: $black;}
 .bg-blue       {background-color: $blue;}
 .bg-gray       {background-color: $gray;}
@@ -29,10 +51,6 @@ a:visited:hover   {color: darken($purple, 20%);}
 .bg-purple     {background-color: $purple;}
 .bg-red        {background-color: $red;}
 .bg-white      {background-color: $white;}
-
-.bg-blue:hover   {background-color: darken($blue, 20%);}
-.bg-gray:hover   {background-color: darken($gray, 20%);}
-.bg-orange:hover {background-color: darken($orange, 20%);}
 
 .border-0          {border: 0}
 .border-black      {border: 1px solid $black;}
@@ -67,8 +85,3 @@ a:visited:hover   {color: darken($purple, 20%);}
 .color-purple     {color: $purple;}
 .color-red        {color: $red;}
 .color-white      {color: $white;}
-
-.dark-mode {
-  background-color: $grayDark;
-  color: $white;
-}
