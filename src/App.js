@@ -27,7 +27,7 @@ class App extends Component {
           </div>
           <div className="mx-auto mb-4 container">
             <button className="mr-2 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
-            <button className="round-5 p-1/2 border-0 bg-orange font-color--white">Sample</button>
+            <button className="round-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
             <p className="mb-1">
@@ -55,7 +55,7 @@ class App extends Component {
           </div>
           <div className="mx-auto mb-4 container">
             <button className="mr-2 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
-            <button className="round-5 p-1/2 border-0 bg-orange font-color--white">Sample</button>
+            <button className="round-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
             <p className="mb-1">
@@ -73,7 +73,7 @@ class App extends Component {
           </div>
         </section>
 
-        <section className="p-4 dark-mode bg-gray-dark">
+        <section className="p-4 dark-mode bg-gray">
           <div className="mx-auto mb-4 container">
             <div className="w-1/2">
               <p className="mb-1 bold">Homes.com Match</p>
@@ -82,8 +82,8 @@ class App extends Component {
             </div>
           </div>
           <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-white font-color--gray-dark">Sample</button>
-            <button className="round-5 p-1/2 border-white bg-gray-dark font-color--white">Sample</button>
+            <button className="mr-2 round-5 p-1/2 border-0 bg-white font-color--gray">Sample</button>
+            <button className="round-5 p-1/2 border-white bg-gray font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
             <p className="mb-1">
@@ -131,28 +131,28 @@ class App extends Component {
 
         <div className="mx-auto p-4 container hide">
           <div className="w-full">
-            <div className="mb-1 bg-orange font-color--white text-center">Max content well of 784px</div>
+            <div className="mb-1 bg-gray font-color--white text-center">Max content well of 784px</div>
             <div className="flex mb-1 font-color--white">
-              <div className="mr-1 w-1/2 bg-orange text-center">1/2</div>
-              <div className="w-1/2 bg-orange text-center">1/2</div>
+              <div className="mr-1 w-1/2 bg-gray text-center">1/2</div>
+              <div className="w-1/2 bg-gray text-center">1/2</div>
             </div>
             <div className="flex mb-1 font-color--white">
-              <div className="mr-1 w-1/3 bg-orange text-center">1/3</div>
-              <div className="mr-1 w-1/3 bg-orange text-center">1/3</div>
-              <div className="w-1/3 bg-orange text-center">1/3</div>
+              <div className="mr-1 w-1/3 bg-gray text-center">1/3</div>
+              <div className="mr-1 w-1/3 bg-gray text-center">1/3</div>
+              <div className="w-1/3 bg-gray text-center">1/3</div>
             </div>
             <div className="flex mb-1 font-color--white">
-              <div className="mr-1 w-1/4 bg-orange text-center">1/4</div>
-              <div className="mr-1 w-1/4 bg-orange text-center">1/4</div>
-              <div className="mr-1 w-1/4 bg-orange text-center">1/4</div>
-              <div className="w-1/4 bg-orange text-center">1/4</div>
+              <div className="mr-1 w-1/4 bg-gray text-center">1/4</div>
+              <div className="mr-1 w-1/4 bg-gray text-center">1/4</div>
+              <div className="mr-1 w-1/4 bg-gray text-center">1/4</div>
+              <div className="w-1/4 bg-gray text-center">1/4</div>
             </div>
             <div className="flex font-color--white">
-              <div className="mr-1 w-1/5 bg-orange text-center">1/5</div>
-              <div className="mr-1 w-1/5 bg-orange text-center">1/5</div>
-              <div className="mr-1 w-1/5 bg-orange text-center">1/5</div>
-              <div className="mr-1 w-1/5 bg-orange text-center">1/5</div>
-              <div className="w-1/5 bg-orange text-center">1/5</div>
+              <div className="mr-1 w-1/5 bg-gray text-center">1/5</div>
+              <div className="mr-1 w-1/5 bg-gray text-center">1/5</div>
+              <div className="mr-1 w-1/5 bg-gray text-center">1/5</div>
+              <div className="mr-1 w-1/5 bg-gray text-center">1/5</div>
+              <div className="w-1/5 bg-gray text-center">1/5</div>
             </div>
           </div>
         </div>

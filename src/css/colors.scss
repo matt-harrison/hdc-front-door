@@ -1,31 +1,33 @@
 $black:        #000000;
 $blue:         #0054A0;
-$dark-gray:    #4A4A4A;
-$gray:         #6F6F6F;
+$gray:         #57504C;
 $green:        #349D44;
-$light-gray:   #F3F3F3;
-$light-orange: #F9AB62;
-$light-purple: #CFC4ED;
-$orange:       #E27208;
+$gray-light:   #F3F3F3;
+$orange-light: #F9AB62;
+$orange:       #D96D08;
 $purple:       #6A3FC4;
 $red:          #BD0606;
 $white:        #FFFFFF;
 
 body {
   background-color: $white;
-  color: $dark-gray;
+  color: $gray;
 }
 
-a                 {color: $blue;}
-a:active, a:hover {color: darken($blue, 20%);}
+a                 {color: $gray;}
+a:active, a:hover {color: darken($gray, 20%);}
 a:visited         {color: $purple;}
 a:visited:hover   {color: darken($purple, 20%);}
 
-button.bg-blue:hover      {background-color: darken($blue, 20%);}
-button.bg-gray:hover      {background-color: darken($gray, 20%);}
-button.bg-gray-dark:hover {background-color: darken($dark-gray, 20%);}
-button.bg-orange:hover    {background-color: darken($orange, 20%);}
-button.bg-white:hover     {background-color: darken($white, 20%);}
+button.bg-blue:hover  {background-color: darken($blue, 20%);}
+button.bg-gray:hover  {background-color: darken($gray, 20%);}
+button.bg-white:hover {background-color: darken($white, 20%);}
+
+input[disabled],
+button[disabled],
+textarea[disabled] {
+  opacity: 0.5;
+}
 
 /*
 Only the resets are affected by the Dark Mode modifier. Other elements within
@@ -35,53 +37,32 @@ classes from the reusable class library.
 .dark-mode {
   color: $white;
 
-  a                 {color: $light-orange;}
-  a:active, a:hover {color: darken($light-orange, 20%);}
-  a:visited         {color: $light-purple;}
-  a:visited:hover   {color: darken($light-purple, 20%);}
+  a                 {color: $white;}
+  a:active, a:hover {color: $gray-light;}
+  a:visited         {color: $white;}
+  a:visited:hover   {color: $gray-light;}
 }
 
-.bg-black      {background-color: $black;}
 .bg-blue       {background-color: $blue;}
 .bg-gray       {background-color: $gray;}
-.bg-gray-dark  {background-color: $dark-gray;}
-.bg-gray-light {background-color: $light-gray;}
-.bg-green      {background-color: $green;}
+.bg-gray-light {background-color: $gray-light;}
 .bg-orange     {background-color: $orange;}
-.bg-purple     {background-color: $purple;}
-.bg-red        {background-color: $red;}
 .bg-white      {background-color: $white;}
 
 .border-0          {border: 0}
-.border-black      {border: 1px solid $black;}
-.border-blue       {border: 1px solid $blue;}
-.border-gray-dark  {border: 1px solid $dark-gray;}
 .border-gray       {border: 1px solid $gray;}
-.border-green      {border: 1px solid $green;}
-.border-gray-light {border: 1px solid $light-gray;}
-.border-orange     {border: 1px solid $orange;}
-.border-purple     {border: 1px solid $purple;}
-.border-red        {border: 1px solid $red;}
+.border-gray-light {border: 1px solid $gray-light;}
 .border-white      {border: 1px solid $white;}
 
-.border-b-black      {border-bottom: 1px solid $black;}
-.border-b-blue       {border-bottom: 1px solid $blue;}
 .border-b-gray       {border-bottom: 1px solid $gray;}
-.border-b-gray-dark  {border-bottom: 1px solid $dark-gray;}
-.border-b-gray-light {border-bottom: 1px solid $light-gray;}
-.border-b-green      {border-bottom: 1px solid $green;}
-.border-b-orange     {border-bottom: 1px solid $orange;}
-.border-b-purple     {border-bottom: 1px solid $purple;}
-.border-b-red        {border-bottom: 1px solid $red;}
+.border-b-gray-light {border-bottom: 1px solid $gray-light;}
 .border-b-white      {border-bottom: 1px solid $white;}
 
 .font-color--black      {color: $black;}
 .font-color--blue       {color: $blue;}
 .font-color--gray       {color: $gray;}
-.font-color--gray-dark  {color: $dark-gray;}
-.font-color--gray-light {color: $light-gray;}
+.font-color--gray-light {color: $gray-light;}
 .font-color--green      {color: $green;}
 .font-color--orange     {color: $orange;}
-.font-color--purple     {color: $purple;}
 .font-color--red        {color: $red;}
 .font-color--white      {color: $white;}
