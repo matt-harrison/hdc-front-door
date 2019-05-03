@@ -1,4 +1,4 @@
-$black:      #000000;
+/* Colors */
 $blue:       #0054A0;
 $gray:       #4A4A4A;
 $gray-light: #E6E6E6;
@@ -13,9 +13,9 @@ body {
   color: $gray;
 }
 
-button.bg-blue:hover   {background-color: darken($blue, 20%);}
-button.bg-gray:hover   {background-color: darken($gray, 20%);}
-button.bg-white:hover  {background-color: darken($white, 20%);}
+button.bg-blue:hover  {background-color: darken($blue, 20%);}
+button.bg-gray:hover  {background-color: darken($gray, 20%);}
+button.bg-white:hover {background-color: darken($white, 20%);}
 
 input[disabled],
 button[disabled],
@@ -47,19 +47,15 @@ classes from the reusable class library.
 .bg-gray-light {background-color: $gray-light;}
 .bg-white      {background-color: $white;}
 
-.border-0          {border: 0;}
-.border-gray       {border: 1px solid $gray;}
-.border-gray-light {border: 1px solid $gray-light;}
-.border-white      {border: 1px solid $white;}
+.border-0     {border: 0;}
+.border-gray  {border: 1px solid $gray;}
+.border-white {border: 1px solid $white;}
 
-.border-b-gray       {border-bottom: 1px solid $gray;}
-.border-b-gray-light {border-bottom: 1px solid $gray-light;}
-.border-b-white      {border-bottom: 1px solid $white;}
+.border-b-gray  {border-bottom: 1px solid $gray;}
+.border-b-white {border-bottom: 1px solid $white;}
 
-.font-color--black        {color: $black;}
-.font-color--blue         {color: $blue;}
-.font-color--gray         {color: $gray;}
-.font-color--gray-light   {color: $gray-light;}
-.font-color--green        {color: $green;}
-.font-color--red          {color: $red;}
-.font-color--white        {color: $white;}
+.font-color--blue  {color: $blue;}
+.font-color--gray  {color: $gray;}
+.font-color--green {color: $green;}
+.font-color--red   {color: $red;}
+.font-color--white {color: $white;}
