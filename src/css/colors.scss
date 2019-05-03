@@ -1,33 +1,32 @@
-$black:        #000000;
-$blue:         #0054A0;
-$gray:         #57504C;
-$green:        #349D44;
-$gray-light:   #F3F3F3;
-$orange-light: #F9AB62;
-$orange:       #D96D08;
-$purple:       #6A3FC4;
-$red:          #BD0606;
-$white:        #FFFFFF;
+$black:      #000000;
+$blue:       #0054A0;
+$gray:       #4A4A4A;
+$gray-light: #E6E6E6;
+$green:      #349D44;
+$orange:     #D96D08;
+$purple:     #6A3FC4;
+$red:        #BD0606;
+$white:      #FFFFFF;
 
 body {
   background-color: $white;
   color: $gray;
 }
 
-a                 {color: $gray;}
-a:active, a:hover {color: darken($gray, 20%);}
-a:visited         {color: $purple;}
-a:visited:hover   {color: darken($purple, 20%);}
-
-button.bg-blue:hover  {background-color: darken($blue, 20%);}
-button.bg-gray:hover  {background-color: darken($gray, 20%);}
-button.bg-white:hover {background-color: darken($white, 20%);}
+button.bg-blue:hover   {background-color: darken($blue, 20%);}
+button.bg-gray:hover   {background-color: darken($gray, 20%);}
+button.bg-white:hover  {background-color: darken($white, 20%);}
 
 input[disabled],
 button[disabled],
 textarea[disabled] {
   opacity: 0.5;
 }
+
+a                 {color: $gray;}
+a:active, a:hover {color: darken($gray, 20%);}
+a:visited         {color: $purple;}
+a:visited:hover   {color: darken($purple, 20%);}
 
 /*
 Only the resets are affected by the Dark Mode modifier. Other elements within
@@ -38,18 +37,17 @@ classes from the reusable class library.
   color: $white;
 
   a                 {color: $white;}
-  a:active, a:hover {color: $gray-light;}
-  a:visited         {color: $white;}
-  a:visited:hover   {color: $gray-light;}
+  a:active, a:hover {color: darken($white, 20%);}
+  a:visited         {color: $gray-light;}
+  a:visited:hover   {color: darken($gray-light, 20%);}
 }
 
 .bg-blue       {background-color: $blue;}
 .bg-gray       {background-color: $gray;}
 .bg-gray-light {background-color: $gray-light;}
-.bg-orange     {background-color: $orange;}
 .bg-white      {background-color: $white;}
 
-.border-0          {border: 0}
+.border-0          {border: 0;}
 .border-gray       {border: 1px solid $gray;}
 .border-gray-light {border: 1px solid $gray-light;}
 .border-white      {border: 1px solid $white;}
@@ -58,11 +56,10 @@ classes from the reusable class library.
 .border-b-gray-light {border-bottom: 1px solid $gray-light;}
 .border-b-white      {border-bottom: 1px solid $white;}
 
-.font-color--black      {color: $black;}
-.font-color--blue       {color: $blue;}
-.font-color--gray       {color: $gray;}
-.font-color--gray-light {color: $gray-light;}
-.font-color--green      {color: $green;}
-.font-color--orange     {color: $orange;}
-.font-color--red        {color: $red;}
-.font-color--white      {color: $white;}
+.font-color--black        {color: $black;}
+.font-color--blue         {color: $blue;}
+.font-color--gray         {color: $gray;}
+.font-color--gray-light   {color: $gray-light;}
+.font-color--green        {color: $green;}
+.font-color--red          {color: $red;}
+.font-color--white        {color: $white;}

@@ -25,8 +25,8 @@ class App extends Component {
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
             </div>
           </div>
-          <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
+          <div className="mx-auto mb-4 border-gray p-1 container">
+            <button className="mr-1 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
             <button className="round-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
@@ -53,8 +53,8 @@ class App extends Component {
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
             </div>
           </div>
-          <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
+          <div className="mx-auto mb-4 border-gray p-1 container">
+            <button className="mr-1 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
             <button className="round-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
@@ -77,12 +77,12 @@ class App extends Component {
           <div className="mx-auto mb-4 container">
             <div className="w-1/2">
               <p className="mb-1 bold">Homes.com Match</p>
-              <p className="mb-1 border-b-white pb-1 font-serif font-2.5">Your personalized homes search tool</p>
+              <p className="mb-1 border-b-white pb-1 font-color--white font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
             </div>
           </div>
-          <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-white font-color--gray">Sample</button>
+          <div className="mx-auto mb-4 border-white p-1 container">
+            <button className="mr-1 round-5 p-1/2 border-0 bg-white font-color--gray">Sample</button>
             <button className="round-5 p-1/2 border-white bg-gray font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">
@@ -105,12 +105,12 @@ class App extends Component {
           <div className="mx-auto mb-4 container">
             <div className="w-1/2">
               <p className="mb-1 bold">Homes.com Match</p>
-              <p className="mb-1 border-b-white pb-1 font-serif font-2.5">Your personalized homes search tool</p>
+              <p className="mb-1 border-b-white pb-1 font-color--white font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
             </div>
           </div>
-          <div className="mx-auto mb-4 container">
-            <button className="mr-2 round-5 p-1/2 border-0 bg-white font-color--blue">Sample</button>
+          <div className="mx-auto mb-4 border-white p-1 container">
+            <button className="mr-1 round-5 p-1/2 border-0 bg-white font-color--blue">Sample</button>
             <button className="round-5 p-1/2 border-white bg-blue font-color--white">Sample</button>
           </div>
           <div className="mx-auto container">

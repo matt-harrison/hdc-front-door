@@ -1,3 +1,11 @@
+html, body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 body, button, input, textarea {
   font-family: 'Open Sans';
   font-size: 16px;
