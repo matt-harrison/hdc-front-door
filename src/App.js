@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 
+require('./App.scss');
+
 class App extends Component {
   state = {
-    isDarkMode: false
+    isDarkMode: false,
+    underlinePosition: 0
+  }
+
+  setUnderline = (position) => {
+    this.setState({
+      underlinePosition: position
+    });
   }
 
   toggleDarkMode = () => {
@@ -18,11 +27,16 @@ class App extends Component {
       className="relative"
       >
         <section className="p-4">
-          <div className="mx-auto mb-4 container">
+          <div className="flex mx-auto mb-4 container">
             <div className="w-1/2">
               <p className="mb-1 font-color--blue bold">Homes.com Match</p>
               <p className="mb-1 border-b-gray pb-1 font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
+            </div>
+            <div className="flex justify-center items-center w-1/2">
+              <div className="relative agent radius-1/2 bg-blue">
+                <div className="absolute badge radius-1/2 bg-orange"></div>
+              </div>
             </div>
           </div>
           <div className="mx-auto mb-4 container">
@@ -34,10 +48,17 @@ class App extends Component {
             </div>
           </div>
           <div className="mx-auto mb-4 border-gray p-1 container">
-            <button className="mr-1 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
-            <button className="round-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
+            <button className="radius-5 p-1/2 border-gray bg-white">Sample</button>
           </div>
           <div className="mx-auto container">
+            <div className="mb-1/2">
+              <span className="p-1 bold pointer">Tab 1</span>
+              <span className="p-1 pointer">Tab 2</span>
+              <span className="p-1 pointer">Tab 3</span>
+            </div>
+            <div className="underline mb-1 radius-5 bg-orange"></div>
             <p className="mb-1">
               Homes.com provides home buyers, sellers, renters, and <a href="/1">home value</a> seekers with up-to-date real estate information, tools, and home listings across the US and Canada. Our website and mobile apps give consumers the information they need to find their first or next home, as well as innovative tools like Snap and Search, Homes.com Match and HomeShare to make the home search experience collaborative, simple and effective.
             </p>
@@ -54,11 +75,16 @@ class App extends Component {
         </section>
 
         <section className="p-4 bg-gray-light">
-          <div className="mx-auto mb-4 container">
+          <div className="flex mx-auto mb-4 container">
             <div className="w-1/2">
               <p className="mb-1 font-color--blue bold">Homes.com Match</p>
               <p className="mb-1 border-b-gray pb-1 font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
+            </div>
+            <div className="flex justify-center items-center w-1/2">
+              <div className="relative agent radius-1/2 bg-blue">
+                <div className="absolute badge radius-1/2 bg-orange"></div>
+              </div>
             </div>
           </div>
           <div className="mx-auto mb-4 container">
@@ -70,10 +96,17 @@ class App extends Component {
             </div>
           </div>
           <div className="mx-auto mb-4 border-gray p-1 container">
-            <button className="mr-1 round-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
-            <button className="round-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-0 bg-blue font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-0 bg-gray font-color--white">Sample</button>
+            <button className="radius-5 p-1/2 border-gray bg-white">Sample</button>
           </div>
           <div className="mx-auto container">
+            <div className="mb-1/2">
+              <span className="p-1 bold pointer">Tab 1</span>
+              <span className="p-1 pointer">Tab 2</span>
+              <span className="p-1 pointer">Tab 3</span>
+            </div>
+            <div className="underline mb-1 radius-5 bg-orange"></div>
             <p className="mb-1">
               Homes.com provides home buyers, sellers, renters, and <a href="/1">home value</a> seekers with up-to-date real estate information, tools, and home listings across the US and Canada. Our website and mobile apps give consumers the information they need to find their first or next home, as well as innovative tools like Snap and Search, Homes.com Match and HomeShare to make the home search experience collaborative, simple and effective.
             </p>
@@ -90,22 +123,36 @@ class App extends Component {
         </section>
 
         <section className="p-4 dark-mode bg-gray">
-          <div className="mx-auto mb-4 container">
+          <div className="flex mx-auto mb-4 container">
             <div className="w-1/2">
               <p className="mb-1 bold">Homes.com Match</p>
-              <p className="mb-1 border-b-white pb-1 font-color--white font-serif font-2.5">Your personalized homes search tool</p>
+              <p className="mb-1 border-b-white pb-1 font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
+            </div>
+            <div className="flex justify-center items-center w-1/2">
+              <div className="relative agent radius-1/2 bg-white">
+                <div className="absolute badge radius-1/2 bg-orange"></div>
+              </div>
             </div>
           </div>
           <div className="mx-auto mb-4 container">
-            <a href="/" className="mr-1">&lt; Previous</a>
-            <a href="/nowhere">Next &gt;</a>
+            <div>
+              <a href="/" className="mr-1">&lt; Previous</a>
+              <a href="/nowhere">Next &gt;</a>
+            </div>
           </div>
           <div className="mx-auto mb-4 border-white p-1 container">
-            <button className="mr-1 round-5 p-1/2 border-0 bg-white font-color--gray">Sample</button>
-            <button className="round-5 p-1/2 border-white bg-gray font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-white bg-blue font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-white bg-gray font-color--white">Sample</button>
+            <button className="radius-5 p-1/2 border-white bg-white">Sample</button>
           </div>
           <div className="mx-auto container">
+            <div className="mb-1/2">
+              <span className="p-1 bold pointer">Tab 1</span>
+              <span className="p-1 pointer">Tab 2</span>
+              <span className="p-1 pointer">Tab 3</span>
+            </div>
+            <div className="underline mb-1 radius-5 bg-orange"></div>
             <p className="mb-1">
               Homes.com provides home buyers, sellers, renters, and <a href="/1">home value</a> seekers with up-to-date real estate information, tools, and home listings across the US and Canada. Our website and mobile apps give consumers the information they need to find their first or next home, as well as innovative tools like Snap and Search, Homes.com Match and HomeShare to make the home search experience collaborative, simple and effective.
             </p>
@@ -122,22 +169,36 @@ class App extends Component {
         </section>
 
         <section className="p-4 dark-mode bg-blue">
-          <div className="mx-auto mb-4 container">
+          <div className="flex mx-auto mb-4 container">
             <div className="w-1/2">
               <p className="mb-1 bold">Homes.com Match</p>
-              <p className="mb-1 border-b-white pb-1 font-color--white font-serif font-2.5">Your personalized homes search tool</p>
+              <p className="mb-1 border-b-white pb-1 font-serif font-2.5">Your personalized homes search tool</p>
               <p>A smarter way to find your ideal first or next home. Get matched with the best homes for you. Simply let us know what matters most and we’ll do the rest.</p>
+            </div>
+            <div className="flex justify-center items-center w-1/2">
+              <div className="relative agent radius-1/2 bg-white">
+                <div className="absolute badge radius-1/2 bg-orange"></div>
+              </div>
             </div>
           </div>
           <div className="mx-auto mb-4 container">
-            <a href="/" className="mr-1">&lt; Previous</a>
-            <a href="/nowhere">Next &gt;</a>
+            <div>
+              <a href="/" className="mr-1">&lt; Previous</a>
+              <a href="/nowhere">Next &gt;</a>
+            </div>
           </div>
           <div className="mx-auto mb-4 border-white p-1 container">
-            <button className="mr-1 round-5 p-1/2 border-0 bg-white font-color--blue">Sample</button>
-            <button className="round-5 p-1/2 border-white bg-blue font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-white bg-blue font-color--white">Sample</button>
+            <button className="mr-1 radius-5 p-1/2 border-white bg-gray font-color--white">Sample</button>
+            <button className="radius-5 p-1/2 border-white bg-white">Sample</button>
           </div>
           <div className="mx-auto container">
+            <div className="mb-1/2">
+              <span className="p-1 bold pointer">Tab 1</span>
+              <span className="p-1 pointer">Tab 2</span>
+              <span className="p-1 pointer">Tab 3</span>
+            </div>
+            <div className="underline mb-1 radius-5 bg-orange"></div>
             <p className="mb-1">
               Homes.com provides home buyers, sellers, renters, and <a href="/1">home value</a> seekers with up-to-date real estate information, tools, and home listings across the US and Canada. Our website and mobile apps give consumers the information they need to find their first or next home, as well as innovative tools like Snap and Search, Homes.com Match and HomeShare to make the home search experience collaborative, simple and effective.
             </p>

@@ -1,0 +1,18 @@
+.agent {
+  width: 100px;
+  height: 100px;
+}
+
+.badge {
+  top: 2.5px;
+  right: 2.5px;
+  border: 3px solid white;
+  width: 25px;
+  height: 25px;
+}
+
+.underline {
+  width: 72px;
+  height: 4px;
+  transition: margin 200ms ease-in;
+}

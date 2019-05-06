@@ -3,7 +3,7 @@ $blue:       #0054A0;
 $gray:       #4A4A4A;
 $gray-light: #E6E6E6;
 $green:      #349D44;
-$orange:     #D96D08;
+$orange:     #F7841B;
 $purple:     #6A3FC4;
 $red:        #BD0606;
 $white:      #FFFFFF;
@@ -45,6 +45,7 @@ classes from the reusable class library.
 .bg-blue       {background-color: $blue;}
 .bg-gray       {background-color: $gray;}
 .bg-gray-light {background-color: $gray-light;}
+.bg-orange     {background-color: $orange;}
 .bg-white      {background-color: $white;}
 
 .border-0     {border: 0;}
